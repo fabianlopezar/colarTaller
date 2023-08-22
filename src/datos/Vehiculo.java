@@ -11,19 +11,34 @@ public class Vehiculo extends Base {
     private String modeloV;
     private String nombreD;
     private boolean estadoVehiculo;
+    private int tiempo;
 
     public Vehiculo() {
     }
 
-    public Vehiculo(String modeloV, String nombreD, boolean estadoVehiculo) {
+    public Vehiculo(String modeloV, String nombreD, boolean estadoVehiculo, int tiempo) {
         this.modeloV = modeloV;
         this.nombreD = nombreD;
         this.estadoVehiculo = estadoVehiculo;
+        this.tiempo = tiempo;
     }
 
-    @Override
-    public String toString() {
-        return modeloV + "," + nombreD + "," + estadoVehiculo;
+    /**
+     * Get the value of tiempo
+     *
+     * @return the value of tiempo
+     */
+    public int getTiempo() {
+        return tiempo;
+    }
+
+    /**
+     * Set the value of tiempo
+     *
+     * @param tiempo new value of tiempo
+     */
+    public void setTiempo(int tiempo) {
+        this.tiempo = tiempo;
     }
 
     /**
@@ -65,6 +80,11 @@ public class Vehiculo extends Base {
     @Override
     public Base copy() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String toString() {
+        return modeloV + "," + nombreD + "," + estadoVehiculo + "," + tiempo;
     }
 
 }
