@@ -1,7 +1,14 @@
-/**
- *
- * @author fabian_esteban.lopez
- */
+///*
+// Descripción de la clase:la clase Cola implementa una estructura de datos de cola utilizando una lista enlazada. 
+//Los métodos encolar, desencolar y estaVacia permiten manipular la cola,
+//y el método toString proporciona una representación en cadena de la cola actual.
+//Se espera que los elementos almacenados en esta cola sean subclases de Base.
+//* @author alejandro.sarria@uao.edu.co, alejandro sarria, Código 2225498
+//*  @author jose_ale.burbano@uao.edu.co, jose alejandro burbano, Código 2225498
+//*  @author fabian_esteban.lopez@uao.edu.co   ,fabian lopez ,  Código 2216110
+//* @date 30 /Agosto/2023
+//* @version 1.0
+
 package modelo;
 
 import java.util.LinkedList;
