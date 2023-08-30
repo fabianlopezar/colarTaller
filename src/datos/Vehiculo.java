@@ -10,16 +10,14 @@ public class Vehiculo extends Base {
 
     private String modeloV;
     private String nombreD;
-    private boolean estadoVehiculo;
     private int tiempo;
 
     public Vehiculo() {
     }
 
-    public Vehiculo(String modeloV, String nombreD, boolean estadoVehiculo, int tiempo) {
+    public Vehiculo(String modeloV, String nombreD, int tiempo) {
         this.modeloV = modeloV;
         this.nombreD = nombreD;
-        this.estadoVehiculo = estadoVehiculo;
         this.tiempo = tiempo;
     }
 
@@ -84,7 +82,7 @@ public class Vehiculo extends Base {
 
     @Override
     public String toString() {
-        return modeloV + "," + nombreD + "," + estadoVehiculo + "," + tiempo;
+        return modeloV + "," + nombreD + "," + tiempo+",";
     }
 
 }

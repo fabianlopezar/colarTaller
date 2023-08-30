@@ -1,24 +1,22 @@
-/**
- *
- * @author INTEL i 7
- */
+// @author INTEL i 7
 package controlador;
 
 import datos.Vehiculo;
 
+import java.util.Random;
+
 public class FactoryVehiculo {
 
+    private static Random random = new Random();
+
     public static Vehiculo create() {
-        int minYear = 2000;
-        int maxYear = 2024;
-        int randomYear = (int) (Math.random() * (maxYear - minYear + 1));
+
+        int randomYear = (int) (Math.random() * (2024 - 2000 + 1) + 2000);
+        int tiempo = (int) (Math.random() * (5 - 1 + 1) + 1);
+
         String modeloV = String.valueOf(randomYear);
         String nombreD = "David";
-        boolean estadoVehiculo = true;
-        int minTime = 1;
-        int maxTime = 5;
-        int tiempo = (int) (Math.random() * (maxTime - minTime + 1));
-        Vehiculo v = new Vehiculo(modeloV, nombreD, estadoVehiculo, tiempo);
+        Vehiculo v = new Vehiculo(modeloV, nombreD, tiempo);
         return v;
     }
 
