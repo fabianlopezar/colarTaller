@@ -1,27 +1,26 @@
-///*
-// //Descripción de la clase: define un objeto que representa un vehículo con atributos como modelo,
-//nombre del conductor y tiempo. Proporciona constructores para inicializar estos atributos y métodos para obtener y establecer sus valores.
-//También incluye una implementación incompleta del método copy() para copiar objetos y el método toString() para obtener una representación en cadena de un vehículo.
-////* @author alejandro.sarria@uao.edu.co, alejandro sarria, Código 2225498
-////*  @author jose_ale.burbano@uao.edu.co, jose alejandro burbano, Código 2225498
-////*  @author fabian_esteban.lopez@uao.edu.co   ,fabian lopez ,  Código 2216110
-////* @date 30 /Agosto/2023
-////* @version 1.0
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package datos;
 
 import modelo.Base;
 
-public class Vehiculo extends Base {
-
+/**
+ *
+ * @author fabian_esteban.lopez
+ */
+public class Carro extends Base{
+    
     private String modeloV;
     private String nombreD;
     private int tiempo;
 
-    public Vehiculo() {
+    public Carro() {
     }
 
-    public Vehiculo(String modeloV, String nombreD, int tiempo) {
+    public Carro(String modeloV, String nombreD, int tiempo) {
         this.modeloV = modeloV;
         this.nombreD = nombreD;
         this.tiempo = tiempo;
@@ -45,6 +44,7 @@ public class Vehiculo extends Base {
         this.tiempo = tiempo;
     }
 
+
     /**
      * Get the value of nombreD
      *
@@ -62,6 +62,7 @@ public class Vehiculo extends Base {
     public void setNombreD(String nombreD) {
         this.nombreD = nombreD;
     }
+
 
     /**
      * Get the value of modeloV
@@ -82,13 +83,13 @@ public class Vehiculo extends Base {
     }
 
     @Override
-    public Base copy() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String toString() {
+        return "Carro{" + "modeloV=" + modeloV + ", nombreD=" + nombreD + ", tiempo=" + tiempo + '}';
     }
 
     @Override
-    public String toString() {
-        return modeloV + "," + nombreD + "," + tiempo+",";
+    public Base copy() {
+        return new Carro(modeloV, nombreD, tiempo);
     }
 
 }
