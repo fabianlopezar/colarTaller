@@ -1,7 +1,13 @@
-/**
- *
- * @author fabian_esteban.lopez
- */
+///*
+// //Descripción de la clase: define un objeto que representa un vehículo con atributos como modelo,
+//nombre del conductor y tiempo. Proporciona constructores para inicializar estos atributos y métodos para obtener y establecer sus valores.
+//También incluye una implementación incompleta del método copy() para copiar objetos y el método toString() para obtener una representación en cadena de un vehículo.
+////* @author alejandro.sarria@uao.edu.co, alejandro sarria, Código 2225498
+////*  @author jose_ale.burbano@uao.edu.co, jose alejandro burbano, Código 2225498
+////*  @author fabian_esteban.lopez@uao.edu.co   ,fabian lopez ,  Código 2216110
+////* @date 30 /Agosto/2023
+////* @version 1.0
+
 package datos;
 
 import modelo.Base;
