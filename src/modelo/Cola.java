@@ -14,6 +14,16 @@ package modelo;
 import java.util.LinkedList;
 
 public class Cola<T extends Base> {
+/**
+* Descripción del método: encolar() Agrega el elemento especificado al final de la cola 
+* Descripción del método: desencolar() Remueve y devuelve el primer elemento de la cola
+* Descripción del método: estaVacia() Verifica si la cola está vacía.
+
+* @param colaVehiculos// Obtiene la cola de vehiculos generada
+
+
+* @return retorna la nueva cola
+*/ 
 
     LinkedList<T> colaVehiculos;
 

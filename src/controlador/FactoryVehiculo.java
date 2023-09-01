@@ -13,7 +13,15 @@ import datos.Carro;
 
 
 import java.util.Random;
+/**
+* Descripción del método: create() crea un objeto Carro con valores aleatorios para el año y el tiempo, junto con un nombre de conductor fijo "David", y luego devuelve esta instancia de Carro.
 
+////* @param modeloV // Obtiene un valor numérico aleatorio que es el año del vehiculo
+////* @param nombreD. // Obtiene el nombre asignado, en este caso es “David”.
+
+//* @return retorna el carro creado, con el modelo obtenido y el nombre del dueño.
+*/ 
+    
 public class FactoryVehiculo {
 
     private static Random random = new Random();
